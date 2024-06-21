@@ -1,8 +1,8 @@
 import { Router } from 'express';
-
+import { getTasks } from '../controllers/tasks.controller';
 const router = Router();
 
-router.get('/tasks', (req, res) => res.send('Hello world!'));
+router.get('/tasks', getTasks);
 
 router.get('/tasks/count', (req, res) => res.send('Hello world!'));
 
